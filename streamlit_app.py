@@ -9,7 +9,7 @@ def make_api_call(question, api_key):
         "messages": [
             {
                 "role": "system",
-                "content": "Be precise and concise."
+                "content": "Responde preguntas sobre las leyes de Guatemala, citando las fuentes."
             },
             {
                 "role": "user",
