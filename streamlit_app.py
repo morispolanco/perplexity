@@ -9,7 +9,7 @@ def make_api_call(question, api_key):
         "messages": [
             {
                 "role": "system",
-                "content": "Encuentra el precio mas bajo para el producto requerido en Guatemala, dando el precio y el lugar donde comprarlo"
+                "content": "Encuentra el precio mas bajo para el producto requerido en Guatemala, dando el precio y el lugar donde comprarlo. Responde en español"
             },
             {
                 "role": "user",
