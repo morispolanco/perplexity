@@ -9,7 +9,7 @@ def make_api_call(question, api_key):
         "messages": [
             {
                 "role": "system",
-                "content": "Responde preguntas sobre las leyes de Guatemala, citando las fuentes."
+                "content": "Encuentra el precio mas bajo para el producto requerido en Guatemala, dando el precio y el lugar donde comprarlo"
             },
             {
                 "role": "user",
@@ -28,9 +28,9 @@ def make_api_call(question, api_key):
     return response.json()["choices"][0]["message"]["content"]
 
 def main():
-    st.title("Preguntas sobre las leyes de Guatemala")
+    st.title("El mejor precio del producto en Guatemala")
 
-    question = st.text_input("Haz tu pregunta:")
+    question = st.text_input("Ingrese elproducto:")
     api_key = "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"  # Reemplaza con tu clave real
 
     if st.button("Obtener respuesta"):
